@@ -8,6 +8,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 const userRoutes=require("./routes/userRoutes");
+const todoListRoutes=require("./routes/todoListRoutes");
 app.use("/api/users".userRoutes);
 
 app.get("/" ,(req,res)=>{
